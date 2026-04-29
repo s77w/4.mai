@@ -3,199 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Star Wars Abend | 8. Mai</title>
-  <meta name="description" content="Lockere Website fuer einen Star Wars Abend unter Freunden im Discord am 8. Mai mit Zeitplan und Games.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Imperial Mission Command - ULTRA</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="topbar">
-      <a class="brand" href="#top">Star Wars Abend</a>
-      <nav class="nav">
-        <a href="#programm">Programm</a>
-        <a href="#highlights">Highlights</a>
-        <a href="#tickets">Tickets</a>
-      </nav>
+  <div class="starfield" aria-hidden="true"></div>
+  <div class="app-shell">
+    <header class="dashboard-header glass-card">
+      <div>
+        <p class="kicker">Imperial Strategic Network</p>
+        <h1>IMPERIAL MISSION COMMAND</h1>
+      </div>
+      <div class="header-actions">
+        <div class="user-pill">STATUS: ÖFFENTLICHER ZUGRIFF</div>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">08. Mai 2026 | Unser Discord</p>
-          <h1>Ein entspannter Star-Wars-Abend mit Freunden.</h1>
-          <p class="hero-text">
-            Kein grosses Event, sondern einfach ein cooler gemeinsamer Abend im Discord:
-            bisschen SWTOR, bisschen Battlefront, ein Kahoot zwischendurch und am Ende ein sauberer Abschluss.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#programm">Zeitplan ansehen</a>
-            <a class="button button-secondary" href="#highlights">Kurzcheck</a>
-          </div>
-          <ul class="hero-facts" aria-label="Event-Fakten">
-            <li><strong>7.5h</strong><span>Gemeinsamer Abend</span></li>
-            <li><strong>Discord</strong><span>Alles direkt im Voice</span></li>
-            <li><strong>9 Slots</strong><span>Locker durchgeplant</span></li>
-          </ul>
-        </div>
-        <div class="hero-media">
-          <img src="assets/hero.jpg" alt="Sci-Fi Cosplay auf einem Fan-Event">
-          <div class="media-card">
-            <span class="pill">Mit Freunden</span>
-            <p>SWTOR, Kahoot, HvV und ein Abend, bei dem einfach alle entspannt zusammen reingehen koennen.</p>
-          </div>
+    <main class="dashboard-grid">
+      <section class="glass-card command-panel">
+        <p class="section-label">System-Integrität</p>
+        <h2>Operations-Überblick</h2>
+        <div class="status-grid">
+          <article><span>Zeitplan</span><strong>LOKAL FIXIERT</strong></article>
+          <article><span>Registrierung</span><strong>FIRESTORE</strong></article>
+          <article><span>Verbindung</span><strong>AKTIV</strong></article>
         </div>
       </section>
 
-      <section class="info-band">
-        <div>
-          <span class="label">Ort</span>
-          <p>Unser Discord</p>
-        </div>
-        <div>
-          <span class="label">Start</span>
-          <p>16:30 Uhr</p>
-        </div>
-        <div>
-          <span class="label">Plan</span>
-          <p>Voice, Games, Pause und am Ende Gewinner Reveal</p>
-        </div>
-        <div>
-          <span class="label">Vibe</span>
-          <p>Mehr Freundesrunde als offizielles Event</p>
-        </div>
-      </section>
-
-      <section class="section-grid" id="programm">
+      <section class="glass-card timeline-panel">
         <div class="section-heading">
-          <p class="eyebrow">Zeitplan</p>
-          <h2>Der Ablauf fuer Donnerstag, 8. Mai 2026.</h2>
+          <h2>MISSIONS-TIMELINE (8. MAI)</h2>
+          <span class="live-indicator">SCROLLBAR</span>
         </div>
-        <div class="schedule">
-          <article>
-            <span>16:30 - 16:45</span>
-            <div>
-              <h3>Orga & Tech Check</h3>
-              <p>Erstmal kurz sammeln, alles starten und schauen, dass bei allen Technik und Voice laufen.</p>
-            </div>
-          </article>
-          <article>
-            <span>16:45 - 18:00</span>
-            <div>
-              <h3>SWTOR</h3>
-              <p>Zum Reinkommen erst einmal gemeinsam SWTOR, damit der Abend entspannt startet.</p>
-            </div>
-          </article>
-          <article>
-            <span>18:00 - 18:45</span>
-            <div>
-              <h3>Essen</h3>
-              <p>Kleine Pause fuer Essen, kurz runterkommen und nebenbei weiter im Voice quatschen.</p>
-            </div>
-          </article>
-          <article>
-            <span>18:45 - 19:15</span>
-            <div>
-              <h3>Kahoot</h3>
-              <p>Kurze Quizrunde, einfach fuer den Spass und um ein bisschen Chaos reinzubringen.</p>
-            </div>
-          </article>
-          <article>
-            <span>19:20 - 20:20</span>
-            <div>
-              <h3>BF II HvV Hide & Seek</h3>
-              <p>Eine Stunde HvV mit Hide-and-Seek-Regeln, also genau die richtige Mischung aus Chaos und Spass.</p>
-            </div>
-          </article>
-          <article>
-            <span>20:25 - 21:25</span>
-            <div>
-              <h3>BF 2005 Mods testen</h3>
-              <p>Dann ein Block zum Mods testen und schauen, worauf alle gerade am meisten Lust haben.</p>
-            </div>
-          </article>
-          <article>
-            <span>21:30 - 22:30</span>
-            <div>
-              <h3>BF II HvV</h3>
-              <p>Noch eine ordentliche Runde HvV, wenn alle schon richtig drin sind.</p>
-            </div>
-          </article>
-          <article>
-            <span>22:35 - 23:45</span>
-            <div>
-              <h3>BF II GA / Supremacy</h3>
-              <p>Zum Ende noch ein groesserer Match-Block mit GA oder Supremacy, je nachdem worauf wir Bock haben.</p>
-            </div>
-          </article>
-          <article>
-            <span>23:50 - 0:00</span>
-            <div>
-              <h3>Gewinner Reveal / Ende</h3>
-              <p>Zum Schluss noch kurz Gewinner ansagen und den Abend gemeinsam sauber beenden.</p>
-            </div>
-          </article>
-        </div>
+        <div class="timeline-scroll-container" id="timeline">
+          </div>
       </section>
 
-      <section class="highlights" id="highlights">
-        <div class="section-heading">
-          <p class="eyebrow">Highlights</p>
-          <h2>Eher Freundesrunde als grosses Spektakel.</h2>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Alles an einem Ort</h3>
-            <p>Wir bleiben den ganzen Abend im Discord, also kein Hin und Her und kein grosses Drumherum.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Locker geplant</h3>
-            <p>Es gibt einen roten Faden, aber die Seite wirkt bewusst nicht wie eine offizielle Veranstaltungsseite.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Game Mix</h3>
-            <p>Mit SWTOR, Kahoot und Battlefront ist genug Abwechslung drin, ohne dass es ueberladen wirkt.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Netter Abschluss</h3>
-            <p>Der Gewinner-Reveal am Ende gibt dem Abend noch einen kleinen gemeinsamen Schlussmoment.</p>
-          </article>
-        </div>
-
-        <div class="gallery">
-          <img src="assets/gallery-1.jpg" alt="Dunkles Cosplay mit rotem Lichtschwert auf einem Event">
-          <img src="assets/gallery-2.jpg" alt="Sci-Fi Cosplay mit leuchtender Waffe in Studio-Licht">
-        </div>
+      <section class="glass-card registration-panel">
+        <p class="section-label">Einsatz-Bereitschaft</p>
+        <h2>FÜR MISSION ANMELDEN</h2>
+        <form id="registrationForm" class="registration-form">
+          <label class="field-label">Identifikation (Name/Discord)</label>
+          <input type="text" id="userNameInput" class="input-field" placeholder="Z.B. TK-421" required>
+          
+          <label class="field-label">Einsatz-Ziel wählen</label>
+          <select id="gameSelect" class="input-field" required>
+            <option value="Battlefront II (EA)">Battlefront II (EA)</option>
+            <option value="Battlefront 2005">Battlefront 2005</option>
+            <option value="SWTOR">SWTOR</option>
+            <option value="Kahoot">Kahoot</option>
+          </select>
+          <button class="button-primary" type="submit">EINSATZ REGISTRIEREN</button>
+        </form>
+        <p class="feedback" id="registrationFeedback"></p>
       </section>
 
-      <section class="ticket-block" id="tickets">
-        <div class="ticket-copy">
-          <p class="eyebrow">Kurz gesagt</p>
-          <h2>Einfach rechtzeitig da sein und mit reinjoinen.</h2>
-          <p>
-            Keine Anmeldung, kein grosses Tamtam. Hauptsache, alle sind rechtzeitig im Discord,
-            haben die Games startklar und koennen direkt mitmachen.
-          </p>
-        </div>
-        <div class="ticket-cards">
-          <article class="ticket-card featured">
-            <span class="pill">Vorher</span>
-            <h3>Startklar sein</h3>
-            <p class="price">16:30</p>
-            <p>Discord checken, Voice testen und SWTOR sowie Battlefront am besten vorher schon offen haben.</p>
-            <a class="button button-primary" href="#programm">Ablauf ansehen</a>
-          </article>
-          <article class="ticket-card">
-            <h3>Bis zum Ende</h3>
-            <p class="price">0:00</p>
-            <p>Nach GA oder Supremacy gibt es noch kurz den Gewinner-Reveal und dann ist der Abend rund.</p>
-            <a class="button button-secondary" href="#highlights">Kurzcheck lesen</a>
-          </article>
+      <section class="glass-card admin-panel">
+        <p class="section-label">Truppen-Übersicht</p>
+        <h2>AKTIVE ANMELDUNGEN</h2>
+        <div class="admin-list" id="adminList">
+          <div class="empty-state">Warte auf Truppen-Meldungen...</div>
         </div>
       </section>
     </main>
   </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    window.firebaseConfig = {
+      apiKey: "AIzaSyCqrFL5hu7DDE4Crx9GfA6gLuO5lLVJZJQ",
+      authDomain: "website-83c16.firebaseapp.com",
+      databaseURL: "https://website-83c16-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "website-83c16",
+      storageBucket: "website-83c16.firebasestorage.app",
+      messagingSenderId: "846497776997",
+      appId: "1:846497776997:web:3d95409ac9ea1eabd5cd8c"
+    };
+  </script>
+  <script src="app.js"></script>
 </body>
 </html>
