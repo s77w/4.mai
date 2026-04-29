@@ -13,7 +13,7 @@ body {
   font-size: 26px; 
   color: var(--text);
   background: var(--bg) radial-gradient(circle at center, rgba(0, 210, 255, 0.15) 0%, transparent 80%);
-  overflow: hidden; /* Verhindert das Scrollen der Hauptseite */
+  overflow: hidden; 
 }
 
 .app-shell {
@@ -47,25 +47,21 @@ h2 { font-size: 3.8rem; margin-bottom: 25px; font-weight: 800; }
   overflow: hidden;
 }
 
-.command-panel { grid-column: 1 / -1; }
-.admin-panel { grid-column: 1 / -1; }
+.command-panel, .admin-panel { grid-column: 1 / -1; }
 
-/* Spezifisches Scroll-Modul für die Timeline */
 .timeline-panel {
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Verhindert, dass das Panel selbst wächst */
+  overflow: hidden;
 }
 
 .timeline-scroll-container {
   flex-grow: 1;
-  overflow-y: auto; /* Aktiviert internes Scrollen */
+  overflow-y: auto;
   padding-right: 20px;
 }
 
-/* Custom Scrollbar Styling */
 .timeline-scroll-container::-webkit-scrollbar { width: 12px; }
-.timeline-scroll-container::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); }
 .timeline-scroll-container::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
 
 .status-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
